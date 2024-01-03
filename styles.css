@@ -1,0 +1,67 @@
+/* CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .options {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .kanban-board {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 0 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .column h2 {
+    margin-top: 0;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .priority {
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+  
+  .priority.high {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+  .priority.medium {
+    background-color: #ffa94d;
+  }
+  
+  .priority.low {
+    background-color: #ffea8a;
+  }
+  /* ... */
+  

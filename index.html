@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Kanban Board</h1>
+    <div class="options">
+      <label for="sort">Sort by:</label>
+      <select id="sort">
+        <option value="priority">Priority</option>
+        <option value="title">Title</option>
+      </select>
+      <label for="group">Group by:</label>
+      <select id="group">
+        <option value="status">Status</option>
+        <option value="user">User</option>
+      </select>
+    </div>
+  </header>
+  <main class="kanban-board">
+    <section class="column" id="todo">
+      <h2>To Do</h2>
+    </section>
+    <section class="column" id="inProgress">
+      <h2>In Progress</h2>
+    </section>
+    <section class="column" id="done">
+      <h2>Done</h2>
+    </section>
+  </main>
+
+  <div id="react-app"></div>
+
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+  <script src="reactApp.js" type="text/babel"></script>
+  <script src="script.js"></script>
+</body>
+</html>
